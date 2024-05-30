@@ -22,8 +22,7 @@ if (isset($_POST["submit"])) {
     if ($result) {
         $_SESSION['name']=$name;
         // Store name and email in session
-  
-
+        
         // Redirection should occur before any output
         header('Location: ../login.php');
         exit();

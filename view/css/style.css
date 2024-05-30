@@ -1,6 +1,7 @@
 .text-center {
     margin-top: 150px;
 }
-#navbtn{
+#navbtn , #nav_admin{
     margin-top: 10px;
+    padding-left: 15px;
 }

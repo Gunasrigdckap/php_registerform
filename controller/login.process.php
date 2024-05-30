@@ -1,7 +1,6 @@
 <?php 
 session_start();
 
-require("../config.php");
 require("../model/DB.php");
 
 $database = new Databaseconnection($config);
@@ -23,7 +22,7 @@ if (isset($_POST["submit"])) {
         // Verify the password
         if (password_verify($password, $user['password'])) {
             // Password is correct, redirect to index
-            header("Location: ../index.php");
+            header("Location: ../home.php");
             exit();
         } else {
             // Password is incorrect
