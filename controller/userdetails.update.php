@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     // Add update logic for other fields as per your requirement
 
-    $stmt = $callconn->prepare("UPDATE users SET name=?, email=? WHERE id=?");
+    $stmt = $callconn->prepare("UPDATE registerTable SET name=?, email=? WHERE id=?");
     $stmt->bind_param("ssi", $name, $email, $id);
 
     if ($stmt->execute()) {
